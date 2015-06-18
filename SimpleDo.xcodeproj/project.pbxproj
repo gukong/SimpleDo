@@ -37,7 +37,7 @@
 		77782D491B330DC800CC48F9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		77782D4A1B330DC800CC48F9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		77782D4D1B330DC800CC48F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		77782D4F1B330DC800CC48F9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		77782D4F1B330DC800CC48F9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../SimpleDo/Images.xcassets; sourceTree = "<group>"; };
 		77782D521B330DC800CC48F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		77782D581B330DC800CC48F9 /* SimpleDoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleDoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		77782D5D1B330DC800CC48F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -65,6 +65,12 @@
 		77782D331B330DC800CC48F9 = {
 			isa = PBXGroup;
 			children = (
+				77782D911B332E4100CC48F9 /* Core */,
+				77782D921B332E4100CC48F9 /* Extension */,
+				77782D931B332E4100CC48F9 /* Frameworks */,
+				77782D941B332E4100CC48F9 /* Utils */,
+				77782D951B332E4100CC48F9 /* Vendor */,
+				77782D961B332E6E00CC48F9 /* Resource */,
 				77782D3E1B330DC800CC48F9 /* SimpleDo */,
 				77782D5B1B330DC800CC48F9 /* SimpleDoTests */,
 				77782D3D1B330DC800CC48F9 /* Products */,
@@ -87,9 +93,6 @@
 				77782D441B330DC800CC48F9 /* AppDelegate.m */,
 				77782D491B330DC800CC48F9 /* ViewController.h */,
 				77782D4A1B330DC800CC48F9 /* ViewController.m */,
-				77782D4C1B330DC800CC48F9 /* Main.storyboard */,
-				77782D4F1B330DC800CC48F9 /* Images.xcassets */,
-				77782D511B330DC800CC48F9 /* LaunchScreen.xib */,
 				77782D461B330DC800CC48F9 /* SimpleDo.xcdatamodeld */,
 				77782D3F1B330DC800CC48F9 /* Supporting Files */,
 			);
@@ -120,6 +123,51 @@
 				77782D5D1B330DC800CC48F9 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		77782D911B332E4100CC48F9 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		77782D921B332E4100CC48F9 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		77782D931B332E4100CC48F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		77782D941B332E4100CC48F9 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		77782D951B332E4100CC48F9 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		77782D961B332E6E00CC48F9 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				77782D4C1B330DC800CC48F9 /* Main.storyboard */,
+				77782D511B330DC800CC48F9 /* LaunchScreen.xib */,
+				77782D4F1B330DC800CC48F9 /* Images.xcassets */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,6 +302,7 @@
 				77782D4D1B330DC800CC48F9 /* Base */,
 			);
 			name = Main.storyboard;
+			path = ../SimpleDo;
 			sourceTree = "<group>";
 		};
 		77782D511B330DC800CC48F9 /* LaunchScreen.xib */ = {
@@ -262,6 +311,7 @@
 				77782D521B330DC800CC48F9 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			path = ../SimpleDo;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -420,6 +470,7 @@
 				77782D641B330DC800CC48F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		77782D651B330DC800CC48F9 /* Build configuration list for PBXNativeTarget "SimpleDoTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +479,7 @@
 				77782D671B330DC800CC48F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
