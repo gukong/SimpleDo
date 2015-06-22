@@ -9,12 +9,18 @@
 /* Begin PBXBuildFile section */
 		77782D421B330DC800CC48F9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77782D411B330DC800CC48F9 /* main.m */; };
 		77782D451B330DC800CC48F9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77782D441B330DC800CC48F9 /* AppDelegate.m */; };
-		77782D481B330DC800CC48F9 /* SimpleDo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 77782D461B330DC800CC48F9 /* SimpleDo.xcdatamodeld */; };
 		77782D4B1B330DC800CC48F9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77782D4A1B330DC800CC48F9 /* ViewController.m */; };
 		77782D4E1B330DC800CC48F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77782D4C1B330DC800CC48F9 /* Main.storyboard */; };
 		77782D501B330DC800CC48F9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77782D4F1B330DC800CC48F9 /* Images.xcassets */; };
 		77782D531B330DC800CC48F9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77782D511B330DC800CC48F9 /* LaunchScreen.xib */; };
 		77782D5F1B330DC800CC48F9 /* SimpleDoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 77782D5E1B330DC800CC48F9 /* SimpleDoTests.m */; };
+		77782DAE1B35B68900CC48F9 /* EventItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 77782DA71B35B68900CC48F9 /* EventItem.m */; };
+		77782DAF1B35B68900CC48F9 /* PersonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 77782DA91B35B68900CC48F9 /* PersonItem.m */; };
+		77782DB01B35B68900CC48F9 /* ProjectItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 77782DAB1B35B68900CC48F9 /* ProjectItem.m */; };
+		77782DB11B35B68900CC48F9 /* SimpleDo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 77782DAC1B35B68900CC48F9 /* SimpleDo.xcdatamodeld */; };
+		77782DB51B35B73C00CC48F9 /* EventItemAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 77782DB41B35B73C00CC48F9 /* EventItemAdapter.m */; };
+		77782DB91B35BB0900CC48F9 /* DialPlateDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 77782DB81B35BB0900CC48F9 /* DialPlateDataManager.m */; };
+		77782DBC1B35BB2600CC48F9 /* TimeLineDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 77782DBB1B35BB2600CC48F9 /* TimeLineDataManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +39,6 @@
 		77782D411B330DC800CC48F9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		77782D431B330DC800CC48F9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		77782D441B330DC800CC48F9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		77782D471B330DC800CC48F9 /* SimpleDo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SimpleDo.xcdatamodel; sourceTree = "<group>"; };
 		77782D491B330DC800CC48F9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		77782D4A1B330DC800CC48F9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		77782D4D1B330DC800CC48F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -42,6 +47,22 @@
 		77782D581B330DC800CC48F9 /* SimpleDoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleDoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		77782D5D1B330DC800CC48F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77782D5E1B330DC800CC48F9 /* SimpleDoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleDoTests.m; sourceTree = "<group>"; };
+		77782DA61B35B68900CC48F9 /* EventItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventItem.h; sourceTree = "<group>"; };
+		77782DA71B35B68900CC48F9 /* EventItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventItem.m; sourceTree = "<group>"; };
+		77782DA81B35B68900CC48F9 /* PersonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonItem.h; sourceTree = "<group>"; };
+		77782DA91B35B68900CC48F9 /* PersonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonItem.m; sourceTree = "<group>"; };
+		77782DAA1B35B68900CC48F9 /* ProjectItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectItem.h; sourceTree = "<group>"; };
+		77782DAB1B35B68900CC48F9 /* ProjectItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectItem.m; sourceTree = "<group>"; };
+		77782DAD1B35B68900CC48F9 /* SimpleDo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SimpleDo.xcdatamodel; sourceTree = "<group>"; };
+		77782DB31B35B73C00CC48F9 /* EventItemAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventItemAdapter.h; sourceTree = "<group>"; };
+		77782DB41B35B73C00CC48F9 /* EventItemAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventItemAdapter.m; sourceTree = "<group>"; };
+		77782DB71B35BB0900CC48F9 /* DialPlateDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DialPlateDataManager.h; sourceTree = "<group>"; };
+		77782DB81B35BB0900CC48F9 /* DialPlateDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DialPlateDataManager.m; sourceTree = "<group>"; };
+		77782DBA1B35BB2600CC48F9 /* TimeLineDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeLineDataManager.h; sourceTree = "<group>"; };
+		77782DBB1B35BB2600CC48F9 /* TimeLineDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeLineDataManager.m; sourceTree = "<group>"; };
+		77782DBE1B35BD9F00CC48F9 /* EventItemChangedDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventItemChangedDelegate.h; sourceTree = "<group>"; };
+		77782DBF1B35BDC800CC48F9 /* TimeLineDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeLineDelegate.h; sourceTree = "<group>"; };
+		77782DC01B35BEAC00CC48F9 /* DialPlateDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DialPlateDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,13 +86,15 @@
 		77782D331B330DC800CC48F9 = {
 			isa = PBXGroup;
 			children = (
+				77782DBD1B35BC6C00CC48F9 /* Protocol */,
+				77782DA41B35B68900CC48F9 /* DataModel */,
+				77782D3E1B330DC800CC48F9 /* SimpleDo */,
 				77782D911B332E4100CC48F9 /* Core */,
 				77782D921B332E4100CC48F9 /* Extension */,
 				77782D931B332E4100CC48F9 /* Frameworks */,
 				77782D941B332E4100CC48F9 /* Utils */,
 				77782D951B332E4100CC48F9 /* Vendor */,
 				77782D961B332E6E00CC48F9 /* Resource */,
-				77782D3E1B330DC800CC48F9 /* SimpleDo */,
 				77782D5B1B330DC800CC48F9 /* SimpleDoTests */,
 				77782D3D1B330DC800CC48F9 /* Products */,
 			);
@@ -93,7 +116,6 @@
 				77782D441B330DC800CC48F9 /* AppDelegate.m */,
 				77782D491B330DC800CC48F9 /* ViewController.h */,
 				77782D4A1B330DC800CC48F9 /* ViewController.m */,
-				77782D461B330DC800CC48F9 /* SimpleDo.xcdatamodeld */,
 				77782D3F1B330DC800CC48F9 /* Supporting Files */,
 			);
 			path = SimpleDo;
@@ -168,6 +190,60 @@
 				77782D4F1B330DC800CC48F9 /* Images.xcassets */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		77782DA41B35B68900CC48F9 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				77782DB61B35BAF400CC48F9 /* XcdataManager */,
+				77782DB21B35B6E500CC48F9 /* XcdataAdapter */,
+				77782DA51B35B68900CC48F9 /* Xcdatamodeld */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		77782DA51B35B68900CC48F9 /* Xcdatamodeld */ = {
+			isa = PBXGroup;
+			children = (
+				77782DA61B35B68900CC48F9 /* EventItem.h */,
+				77782DA71B35B68900CC48F9 /* EventItem.m */,
+				77782DA81B35B68900CC48F9 /* PersonItem.h */,
+				77782DA91B35B68900CC48F9 /* PersonItem.m */,
+				77782DAA1B35B68900CC48F9 /* ProjectItem.h */,
+				77782DAB1B35B68900CC48F9 /* ProjectItem.m */,
+				77782DAC1B35B68900CC48F9 /* SimpleDo.xcdatamodeld */,
+			);
+			path = Xcdatamodeld;
+			sourceTree = "<group>";
+		};
+		77782DB21B35B6E500CC48F9 /* XcdataAdapter */ = {
+			isa = PBXGroup;
+			children = (
+				77782DB31B35B73C00CC48F9 /* EventItemAdapter.h */,
+				77782DB41B35B73C00CC48F9 /* EventItemAdapter.m */,
+			);
+			path = XcdataAdapter;
+			sourceTree = "<group>";
+		};
+		77782DB61B35BAF400CC48F9 /* XcdataManager */ = {
+			isa = PBXGroup;
+			children = (
+				77782DB71B35BB0900CC48F9 /* DialPlateDataManager.h */,
+				77782DB81B35BB0900CC48F9 /* DialPlateDataManager.m */,
+				77782DBA1B35BB2600CC48F9 /* TimeLineDataManager.h */,
+				77782DBB1B35BB2600CC48F9 /* TimeLineDataManager.m */,
+			);
+			path = XcdataManager;
+			sourceTree = "<group>";
+		};
+		77782DBD1B35BC6C00CC48F9 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				77782DBE1B35BD9F00CC48F9 /* EventItemChangedDelegate.h */,
+				77782DBF1B35BDC800CC48F9 /* TimeLineDelegate.h */,
+				77782DC01B35BEAC00CC48F9 /* DialPlateDelegate.h */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,10 +346,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77782D481B330DC800CC48F9 /* SimpleDo.xcdatamodeld in Sources */,
+				77782DB11B35B68900CC48F9 /* SimpleDo.xcdatamodeld in Sources */,
 				77782D451B330DC800CC48F9 /* AppDelegate.m in Sources */,
+				77782DAF1B35B68900CC48F9 /* PersonItem.m in Sources */,
+				77782DB91B35BB0900CC48F9 /* DialPlateDataManager.m in Sources */,
+				77782DB01B35B68900CC48F9 /* ProjectItem.m in Sources */,
 				77782D4B1B330DC800CC48F9 /* ViewController.m in Sources */,
+				77782DBC1B35BB2600CC48F9 /* TimeLineDataManager.m in Sources */,
 				77782D421B330DC800CC48F9 /* main.m in Sources */,
+				77782DAE1B35B68900CC48F9 /* EventItem.m in Sources */,
+				77782DB51B35B73C00CC48F9 /* EventItemAdapter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,12 +566,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		77782D461B330DC800CC48F9 /* SimpleDo.xcdatamodeld */ = {
+		77782DAC1B35B68900CC48F9 /* SimpleDo.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				77782D471B330DC800CC48F9 /* SimpleDo.xcdatamodel */,
+				77782DAD1B35B68900CC48F9 /* SimpleDo.xcdatamodel */,
 			);
-			currentVersion = 77782D471B330DC800CC48F9 /* SimpleDo.xcdatamodel */;
+			currentVersion = 77782DAD1B35B68900CC48F9 /* SimpleDo.xcdatamodel */;
 			path = SimpleDo.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
