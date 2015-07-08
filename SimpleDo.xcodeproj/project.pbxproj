@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		772859D11B4D8C3100204E24 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 772859CD1B4D8C3100204E24 /* LaunchScreen.xib */; };
+		772859D21B4D8C3100204E24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 772859CF1B4D8C3100204E24 /* Main.storyboard */; };
+		775695941B4D8ADB0033E11A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 775695931B4D8ADB0033E11A /* Images.xcassets */; };
 		77782D421B330DC800CC48F9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77782D411B330DC800CC48F9 /* main.m */; };
 		77782D451B330DC800CC48F9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77782D441B330DC800CC48F9 /* AppDelegate.m */; };
 		77782D4B1B330DC800CC48F9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77782D4A1B330DC800CC48F9 /* ViewController.m */; };
-		77782D4E1B330DC800CC48F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77782D4C1B330DC800CC48F9 /* Main.storyboard */; };
-		77782D501B330DC800CC48F9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77782D4F1B330DC800CC48F9 /* Images.xcassets */; };
-		77782D531B330DC800CC48F9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77782D511B330DC800CC48F9 /* LaunchScreen.xib */; };
 		77782D5F1B330DC800CC48F9 /* SimpleDoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 77782D5E1B330DC800CC48F9 /* SimpleDoTests.m */; };
 		77782DAE1B35B68900CC48F9 /* EventItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 77782DA71B35B68900CC48F9 /* EventItem.m */; };
 		77782DAF1B35B68900CC48F9 /* PersonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 77782DA91B35B68900CC48F9 /* PersonItem.m */; };
@@ -34,6 +34,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		772859CE1B4D8C3100204E24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		772859D01B4D8C3100204E24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		775695931B4D8ADB0033E11A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = SimpleDo/Images.xcassets; sourceTree = SOURCE_ROOT; };
 		77782D3C1B330DC800CC48F9 /* SimpleDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77782D401B330DC800CC48F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77782D411B330DC800CC48F9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -41,9 +44,6 @@
 		77782D441B330DC800CC48F9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		77782D491B330DC800CC48F9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		77782D4A1B330DC800CC48F9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		77782D4D1B330DC800CC48F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		77782D4F1B330DC800CC48F9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../SimpleDo/Images.xcassets; sourceTree = "<group>"; };
-		77782D521B330DC800CC48F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		77782D581B330DC800CC48F9 /* SimpleDoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleDoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		77782D5D1B330DC800CC48F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77782D5E1B330DC800CC48F9 /* SimpleDoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleDoTests.m; sourceTree = "<group>"; };
@@ -124,6 +124,8 @@
 		77782D3F1B330DC800CC48F9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				772859CD1B4D8C3100204E24 /* LaunchScreen.xib */,
+				772859CF1B4D8C3100204E24 /* Main.storyboard */,
 				77782D401B330DC800CC48F9 /* Info.plist */,
 				77782D411B330DC800CC48F9 /* main.m */,
 			);
@@ -185,9 +187,7 @@
 		77782D961B332E6E00CC48F9 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				77782D4C1B330DC800CC48F9 /* Main.storyboard */,
-				77782D511B330DC800CC48F9 /* LaunchScreen.xib */,
-				77782D4F1B330DC800CC48F9 /* Images.xcassets */,
+				775695931B4D8ADB0033E11A /* Images.xcassets */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -326,9 +326,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77782D4E1B330DC800CC48F9 /* Main.storyboard in Resources */,
-				77782D531B330DC800CC48F9 /* LaunchScreen.xib in Resources */,
-				77782D501B330DC800CC48F9 /* Images.xcassets in Resources */,
+				772859D21B4D8C3100204E24 /* Main.storyboard in Resources */,
+				772859D11B4D8C3100204E24 /* LaunchScreen.xib in Resources */,
+				775695941B4D8ADB0033E11A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,22 +378,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		77782D4C1B330DC800CC48F9 /* Main.storyboard */ = {
+		772859CD1B4D8C3100204E24 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				77782D4D1B330DC800CC48F9 /* Base */,
-			);
-			name = Main.storyboard;
-			path = ../SimpleDo;
-			sourceTree = "<group>";
-		};
-		77782D511B330DC800CC48F9 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				77782D521B330DC800CC48F9 /* Base */,
+				772859CE1B4D8C3100204E24 /* Base */,
 			);
 			name = LaunchScreen.xib;
-			path = ../SimpleDo;
+			sourceTree = "<group>";
+		};
+		772859CF1B4D8C3100204E24 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				772859D01B4D8C3100204E24 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
