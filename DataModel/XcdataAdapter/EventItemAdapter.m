@@ -10,4 +10,16 @@
 
 @implementation EventItemAdapter
 
+- (id)initWithEventItem:(EventItem *)eventItem {
+    self = [super init];
+    if (self) {
+        
+    }
+    return self;
+}
+- (void)saveToDisk {
+    
+}
+
+
 @end

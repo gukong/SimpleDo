@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		772859D11B4D8C3100204E24 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 772859CD1B4D8C3100204E24 /* LaunchScreen.xib */; };
 		772859D21B4D8C3100204E24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 772859CF1B4D8C3100204E24 /* Main.storyboard */; };
-		775695941B4D8ADB0033E11A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 775695931B4D8ADB0033E11A /* Images.xcassets */; };
 		77782D421B330DC800CC48F9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77782D411B330DC800CC48F9 /* main.m */; };
 		77782D451B330DC800CC48F9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77782D441B330DC800CC48F9 /* AppDelegate.m */; };
 		77782D4B1B330DC800CC48F9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77782D4A1B330DC800CC48F9 /* ViewController.m */; };
@@ -21,7 +20,8 @@
 		77782DB51B35B73C00CC48F9 /* EventItemAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 77782DB41B35B73C00CC48F9 /* EventItemAdapter.m */; };
 		77782DB91B35BB0900CC48F9 /* DialPlateDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 77782DB81B35BB0900CC48F9 /* DialPlateDataManager.m */; };
 		77782DBC1B35BB2600CC48F9 /* TimeLineDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 77782DBB1B35BB2600CC48F9 /* TimeLineDataManager.m */; };
-		B4BFA283515EE8AD1D932088 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E9B990C1634A745CC0F6B88 /* libPods.a */; };
+		77FE86301B5018F1000A147A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77FE862F1B5018F1000A147A /* Images.xcassets */; };
+		9BE4223D58C923AAB4394FBB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7691BA57FB0010B626317E60 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,9 +36,9 @@
 
 /* Begin PBXFileReference section */
 		7400CAC9AE85D6FC5528E120 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		7691BA57FB0010B626317E60 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		772859CE1B4D8C3100204E24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		772859D01B4D8C3100204E24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		775695931B4D8ADB0033E11A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = SimpleDo/Images.xcassets; sourceTree = SOURCE_ROOT; };
 		77782D3C1B330DC800CC48F9 /* SimpleDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77782D401B330DC800CC48F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77782D411B330DC800CC48F9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -65,8 +65,8 @@
 		77782DBE1B35BD9F00CC48F9 /* EventItemChangedDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventItemChangedDelegate.h; sourceTree = "<group>"; };
 		77782DBF1B35BDC800CC48F9 /* TimeLineDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeLineDelegate.h; sourceTree = "<group>"; };
 		77782DC01B35BEAC00CC48F9 /* DialPlateDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DialPlateDelegate.h; sourceTree = "<group>"; };
+		77FE862F1B5018F1000A147A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		786C18BA72A8461CC3070F75 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		9E9B990C1634A745CC0F6B88 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4BFA283515EE8AD1D932088 /* libPods.a in Frameworks */,
+				9BE4223D58C923AAB4394FBB /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,12 +91,11 @@
 		77782D331B330DC800CC48F9 = {
 			isa = PBXGroup;
 			children = (
+				77782D3E1B330DC800CC48F9 /* SimpleDo */,
+				77FE862E1B5018AF000A147A /* Extension */,
+				77FE862D1B501894000A147A /* Frameworks */,
 				77782DBD1B35BC6C00CC48F9 /* Protocol */,
 				77782DA41B35B68900CC48F9 /* DataModel */,
-				77782D3E1B330DC800CC48F9 /* SimpleDo */,
-				77782D911B332E4100CC48F9 /* Core */,
-				77782D921B332E4100CC48F9 /* Extension */,
-				77782D931B332E4100CC48F9 /* Frameworks */,
 				77782D941B332E4100CC48F9 /* Utils */,
 				77782D951B332E4100CC48F9 /* Vendor */,
 				77782D961B332E6E00CC48F9 /* Resource */,
@@ -120,8 +119,8 @@
 			children = (
 				77782D431B330DC800CC48F9 /* AppDelegate.h */,
 				77782D441B330DC800CC48F9 /* AppDelegate.m */,
-				77782D491B330DC800CC48F9 /* ViewController.h */,
-				77782D4A1B330DC800CC48F9 /* ViewController.m */,
+				77FE86321B5019A1000A147A /* BasicView */,
+				77FE86311B501966000A147A /* BasicViewController */,
 				77782D3F1B330DC800CC48F9 /* Supporting Files */,
 			);
 			path = SimpleDo;
@@ -155,28 +154,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		77782D911B332E4100CC48F9 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Core;
-			sourceTree = "<group>";
-		};
-		77782D921B332E4100CC48F9 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extension;
-			sourceTree = "<group>";
-		};
-		77782D931B332E4100CC48F9 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				9E9B990C1634A745CC0F6B88 /* libPods.a */,
-			);
-			path = Frameworks;
-			sourceTree = "<group>";
-		};
 		77782D941B332E4100CC48F9 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -194,7 +171,7 @@
 		77782D961B332E6E00CC48F9 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				775695931B4D8ADB0033E11A /* Images.xcassets */,
+				77FE862F1B5018F1000A147A /* Images.xcassets */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -251,6 +228,37 @@
 				77782DC01B35BEAC00CC48F9 /* DialPlateDelegate.h */,
 			);
 			path = Protocol;
+			sourceTree = "<group>";
+		};
+		77FE862D1B501894000A147A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7691BA57FB0010B626317E60 /* libPods.a */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		77FE862E1B5018AF000A147A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		77FE86311B501966000A147A /* BasicViewController */ = {
+			isa = PBXGroup;
+			children = (
+				77782D491B330DC800CC48F9 /* ViewController.h */,
+				77782D4A1B330DC800CC48F9 /* ViewController.m */,
+			);
+			name = BasicViewController;
+			sourceTree = "<group>";
+		};
+		77FE86321B5019A1000A147A /* BasicView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = BasicView;
 			sourceTree = "<group>";
 		};
 		BED44B2DEED5834A222FE33A /* Pods */ = {
@@ -344,9 +352,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77FE86301B5018F1000A147A /* Images.xcassets in Resources */,
 				772859D21B4D8C3100204E24 /* Main.storyboard in Resources */,
 				772859D11B4D8C3100204E24 /* LaunchScreen.xib in Resources */,
-				775695941B4D8ADB0033E11A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
