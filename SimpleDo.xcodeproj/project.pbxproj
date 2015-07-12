@@ -11,7 +11,6 @@
 		772859D21B4D8C3100204E24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 772859CF1B4D8C3100204E24 /* Main.storyboard */; };
 		77782D421B330DC800CC48F9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77782D411B330DC800CC48F9 /* main.m */; };
 		77782D451B330DC800CC48F9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77782D441B330DC800CC48F9 /* AppDelegate.m */; };
-		77782D4B1B330DC800CC48F9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77782D4A1B330DC800CC48F9 /* ViewController.m */; };
 		77782D5F1B330DC800CC48F9 /* SimpleDoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 77782D5E1B330DC800CC48F9 /* SimpleDoTests.m */; };
 		779EDCA31B52888900EAE9E8 /* EventItemAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 779EDC941B52888900EAE9E8 /* EventItemAdapter.m */; };
 		779EDCA41B52888900EAE9E8 /* DialPlateDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 779EDC971B52888900EAE9E8 /* DialPlateDataManager.m */; };
@@ -20,6 +19,11 @@
 		779EDCA71B52888900EAE9E8 /* PersonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 779EDC9E1B52888900EAE9E8 /* PersonItem.m */; };
 		779EDCA81B52888900EAE9E8 /* ProjectItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 779EDCA01B52888900EAE9E8 /* ProjectItem.m */; };
 		779EDCA91B52888900EAE9E8 /* SimpleDo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 779EDCA11B52888900EAE9E8 /* SimpleDo.xcdatamodeld */; };
+		779EDCBA1B529DC600EAE9E8 /* ClockPlateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 779EDCB91B529DC600EAE9E8 /* ClockPlateView.m */; };
+		779EDCC01B529E3200EAE9E8 /* ClockPlateCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 779EDCBF1B529E3200EAE9E8 /* ClockPlateCollectionCell.m */; };
+		779EDCC31B529E7200EAE9E8 /* ClockPlateDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 779EDCC21B529E7200EAE9E8 /* ClockPlateDataModel.m */; };
+		779EDCC61B52A1D500EAE9E8 /* ClockPlateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 779EDCC51B52A1D500EAE9E8 /* ClockPlateViewController.m */; };
+		779EDCCA1B52B7BD00EAE9E8 /* BasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 779EDCC91B52B7BD00EAE9E8 /* BasicViewController.m */; };
 		77FE86301B5018F1000A147A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77FE862F1B5018F1000A147A /* Images.xcassets */; };
 		9BE4223D58C923AAB4394FBB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7691BA57FB0010B626317E60 /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -44,8 +48,6 @@
 		77782D411B330DC800CC48F9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		77782D431B330DC800CC48F9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		77782D441B330DC800CC48F9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		77782D491B330DC800CC48F9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		77782D4A1B330DC800CC48F9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		77782D581B330DC800CC48F9 /* SimpleDoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleDoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		77782D5D1B330DC800CC48F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77782D5E1B330DC800CC48F9 /* SimpleDoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleDoTests.m; sourceTree = "<group>"; };
@@ -65,6 +67,17 @@
 		779EDC9F1B52888900EAE9E8 /* ProjectItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectItem.h; sourceTree = "<group>"; };
 		779EDCA01B52888900EAE9E8 /* ProjectItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectItem.m; sourceTree = "<group>"; };
 		779EDCA21B52888900EAE9E8 /* SimpleDo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SimpleDo.xcdatamodel; sourceTree = "<group>"; };
+		779EDCB81B529DC600EAE9E8 /* ClockPlateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockPlateView.h; sourceTree = "<group>"; };
+		779EDCB91B529DC600EAE9E8 /* ClockPlateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockPlateView.m; sourceTree = "<group>"; };
+		779EDCBE1B529E3200EAE9E8 /* ClockPlateCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockPlateCollectionCell.h; sourceTree = "<group>"; };
+		779EDCBF1B529E3200EAE9E8 /* ClockPlateCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockPlateCollectionCell.m; sourceTree = "<group>"; };
+		779EDCC11B529E7200EAE9E8 /* ClockPlateDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockPlateDataModel.h; sourceTree = "<group>"; };
+		779EDCC21B529E7200EAE9E8 /* ClockPlateDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockPlateDataModel.m; sourceTree = "<group>"; };
+		779EDCC41B52A1D500EAE9E8 /* ClockPlateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockPlateViewController.h; sourceTree = "<group>"; };
+		779EDCC51B52A1D500EAE9E8 /* ClockPlateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockPlateViewController.m; sourceTree = "<group>"; };
+		779EDCC71B52B34300EAE9E8 /* SimpleDo.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleDo.pch; sourceTree = "<group>"; };
+		779EDCC81B52B7BD00EAE9E8 /* BasicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasicViewController.h; path = BasicViewController/BasicViewController.h; sourceTree = "<group>"; };
+		779EDCC91B52B7BD00EAE9E8 /* BasicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BasicViewController.m; path = BasicViewController/BasicViewController.m; sourceTree = "<group>"; };
 		77FE862F1B5018F1000A147A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		786C18BA72A8461CC3070F75 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,9 +104,9 @@
 		77782D331B330DC800CC48F9 = {
 			isa = PBXGroup;
 			children = (
+				77782D3E1B330DC800CC48F9 /* SimpleDo */,
 				779EDCAA1B52896C00EAE9E8 /* Modules */,
 				779EDC911B52888900EAE9E8 /* CoreDataModel */,
-				77782D3E1B330DC800CC48F9 /* SimpleDo */,
 				77FE862E1B5018AF000A147A /* Extension */,
 				77FE862D1B501894000A147A /* Frameworks */,
 				77782D941B332E4100CC48F9 /* Utils */,
@@ -134,6 +147,7 @@
 				772859CF1B4D8C3100204E24 /* Main.storyboard */,
 				77782D401B330DC800CC48F9 /* Info.plist */,
 				77782D411B330DC800CC48F9 /* main.m */,
+				779EDCC71B52B34300EAE9E8 /* SimpleDo.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -256,6 +270,8 @@
 		779EDCB21B528DFA00EAE9E8 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				779EDCC41B52A1D500EAE9E8 /* ClockPlateViewController.h */,
+				779EDCC51B52A1D500EAE9E8 /* ClockPlateViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -263,6 +279,8 @@
 		779EDCB31B528DFA00EAE9E8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				779EDCC11B529E7200EAE9E8 /* ClockPlateDataModel.h */,
+				779EDCC21B529E7200EAE9E8 /* ClockPlateDataModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -270,6 +288,10 @@
 		779EDCB41B528DFA00EAE9E8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				779EDCB81B529DC600EAE9E8 /* ClockPlateView.h */,
+				779EDCB91B529DC600EAE9E8 /* ClockPlateView.m */,
+				779EDCBE1B529E3200EAE9E8 /* ClockPlateCollectionCell.h */,
+				779EDCBF1B529E3200EAE9E8 /* ClockPlateCollectionCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -313,8 +335,8 @@
 		77FE86311B501966000A147A /* BasicViewController */ = {
 			isa = PBXGroup;
 			children = (
-				77782D491B330DC800CC48F9 /* ViewController.h */,
-				77782D4A1B330DC800CC48F9 /* ViewController.m */,
+				779EDCC81B52B7BD00EAE9E8 /* BasicViewController.h */,
+				779EDCC91B52B7BD00EAE9E8 /* BasicViewController.m */,
 			);
 			name = BasicViewController;
 			sourceTree = "<group>";
@@ -474,12 +496,16 @@
 				779EDCA51B52888900EAE9E8 /* TimeLineDataManager.m in Sources */,
 				77782D451B330DC800CC48F9 /* AppDelegate.m in Sources */,
 				779EDCA61B52888900EAE9E8 /* EventItem.m in Sources */,
-				77782D4B1B330DC800CC48F9 /* ViewController.m in Sources */,
+				779EDCC31B529E7200EAE9E8 /* ClockPlateDataModel.m in Sources */,
+				779EDCBA1B529DC600EAE9E8 /* ClockPlateView.m in Sources */,
 				77782D421B330DC800CC48F9 /* main.m in Sources */,
+				779EDCC61B52A1D500EAE9E8 /* ClockPlateViewController.m in Sources */,
 				779EDCA71B52888900EAE9E8 /* PersonItem.m in Sources */,
 				779EDCA41B52888900EAE9E8 /* DialPlateDataManager.m in Sources */,
 				779EDCA31B52888900EAE9E8 /* EventItemAdapter.m in Sources */,
+				779EDCCA1B52B7BD00EAE9E8 /* BasicViewController.m in Sources */,
 				779EDCA81B52888900EAE9E8 /* ProjectItem.m in Sources */,
+				779EDCC01B529E3200EAE9E8 /* ClockPlateCollectionCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -606,6 +632,8 @@
 			baseConfigurationReference = 786C18BA72A8461CC3070F75 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SimpleDo/SimpleDo.pch";
 				INFOPLIST_FILE = SimpleDo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -617,6 +645,8 @@
 			baseConfigurationReference = 7400CAC9AE85D6FC5528E120 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SimpleDo/SimpleDo.pch";
 				INFOPLIST_FILE = SimpleDo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

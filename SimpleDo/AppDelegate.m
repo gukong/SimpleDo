@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
+#import "ClockPlateViewController.h"
 
 @interface AppDelegate ()
 
@@ -18,9 +18,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    ViewController *viewController = [[ViewController alloc]init];
-    [viewController.view setBackgroundColor:[UIColor whiteColor]];
-    [self.window setRootViewController:viewController];
+    ClockPlateViewController *plateViewController = [[ClockPlateViewController alloc] init];
+    [self.window setRootViewController:plateViewController];
     [self.window makeKeyAndVisible];
     return YES;
 }
