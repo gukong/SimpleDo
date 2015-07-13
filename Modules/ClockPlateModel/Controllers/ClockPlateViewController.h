@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ClockPlateViewController : UIViewController
+@interface ClockPlateViewController : BasicViewController
 
 @end

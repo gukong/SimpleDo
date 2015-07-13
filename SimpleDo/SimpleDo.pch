@@ -12,6 +12,8 @@
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
+#import "BasicViewController.h"
+
 #define Width_V(view) view.frame.size.width
 #define Height_V(view) view.frame.size.height
 

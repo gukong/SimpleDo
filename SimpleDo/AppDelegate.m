@@ -19,7 +19,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     ClockPlateViewController *plateViewController = [[ClockPlateViewController alloc] init];
-    [self.window setRootViewController:plateViewController];
+    UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:plateViewController];
+    [self.window setRootViewController:navi];
     [self.window makeKeyAndVisible];
     return YES;
 }

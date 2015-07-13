@@ -21,6 +21,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self.view setBackgroundColor:[UIColor whiteColor]];
+    [self setAutomaticallyAdjustsScrollViewInsets:NO];
+    [self setTitle:NSLocalizedString(@"DO", nil)];
     [self setupViews];
 }
 
