@@ -1,9 +1,9 @@
 //
 //  EventItem.h
-//  SimpleDo
+//  
 //
-//  Created by gukong on 15/6/19.
-//  Copyright (c) 2015年 gukong. All rights reserved.
+//  Created by gukong on 15/8/4.
+//
 //
 
 #import <Foundation/Foundation.h>
@@ -13,12 +13,16 @@
 @interface EventItem : NSManagedObject
 
 @property (nonatomic, retain) NSString * content;
-@property (nonatomic, retain) NSNumber * createStamp;
-@property (nonatomic, retain) NSNumber * endStamp;
-@property (nonatomic, retain) NSNumber * level;
-@property (nonatomic, retain) NSNumber * remindStamp;
-@property (nonatomic, retain) NSNumber * startStamp;
+@property (nonatomic, retain) NSDate * createStamp;
+@property (nonatomic, retain) NSDate * endStamp;
+@property (nonatomic, retain) NSNumber * eventType;
+@property (nonatomic, retain) NSDate * remindStamp;
+@property (nonatomic, retain) NSDate * startStamp;
 @property (nonatomic, retain) NSNumber * status;
 @property (nonatomic, retain) NSNumber * tag;
+@property (nonatomic, retain) NSString * sectionIdentifier;
+@property (nonatomic, retain) NSString * eventItemId;
+
+@property (nonatomic, readonly) NSTimeInterval remainingTime;
 
 @end

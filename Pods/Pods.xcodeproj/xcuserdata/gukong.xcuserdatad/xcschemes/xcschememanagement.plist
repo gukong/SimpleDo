@@ -9,6 +9,26 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-DateTools.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-KVOController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-MZTimerLabel.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-MagicalRecord.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-pop.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +42,37 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1A473902BB9F868B17FF2192</key>
+		<key>59B88ED08644AB4A88D15DFE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1B52AB63C3A8D1A45BB8F093</key>
+		<key>72571D0EB0EC543AC6D8EB58</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7C0C0666C2A98980311B01F7</key>
+		<key>7296CCC876D14E0925C09508</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8748514BE4367497506B53B2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BE7E0104D7E064413C8FFD18</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C5AF7FFF31EFE972C2D9293C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C6F9A9CF1C74FD443B990C24</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -1,21 +1,21 @@
 //
 //  ProjectItem.h
-//  SimpleDo
+//  
 //
-//  Created by gukong on 15/6/19.
-//  Copyright (c) 2015年 gukong. All rights reserved.
+//  Created by gukong on 15/8/4.
+//
 //
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
-@class NSManagedObject;
+@class PersonItem;
 
 @interface ProjectItem : NSManagedObject
 
-@property (nonatomic, retain) NSNumber * createStamp;
+@property (nonatomic, retain) NSDate * createStamp;
 @property (nonatomic, retain) id members;
 @property (nonatomic, retain) NSString * name;
-@property (nonatomic, retain) NSManagedObject *principal;
+@property (nonatomic, retain) PersonItem *principal;
 
 @end

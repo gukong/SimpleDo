@@ -1,12 +1,13 @@
 //
 //  ProjectItem.m
-//  SimpleDo
+//  
 //
-//  Created by gukong on 15/6/19.
-//  Copyright (c) 2015年 gukong. All rights reserved.
+//  Created by gukong on 15/8/4.
+//
 //
 
 #import "ProjectItem.h"
+#import "PersonItem.h"
 
 
 @implementation ProjectItem

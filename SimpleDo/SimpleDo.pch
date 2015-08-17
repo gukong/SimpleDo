@@ -12,7 +12,21 @@
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
-#import "BasicViewController.h"
+#import "BaseViewController.h"
+#import "AppEnum.h"
+#import "AppDelegate.h"
+#import <MagicalRecord/MagicalRecord.h>
+#import <DateTools/DateTools.h>
+#import "UIView+Positioning.h"
+#import "BaseMVCProtocol.h"
+#import "BaseSingleSectionDataManager.h"
+#import "BaseMutableSectionDataManager.h"
+#import "BaseCollectionView.h"
+#import <KVOController/FBKVOController.h>
+
+/**
+ *  <#Description#>
+ */
 
 #define Width_V(view) view.frame.size.width
 #define Height_V(view) view.frame.size.height
@@ -22,4 +36,22 @@
 #define UIColorFromRGBA(rgbValue, alphaValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:(float)(alphaValue)]
 
 
+/**
+ *  <#Description#>
+ */
+#define MaxCountOfWaveViews 2
+
+#define NavigationBarHeight 64.f
+
 #endif
+
+/**
+ *  <#Description#>
+ */
+#define STRINGIFY(S) #S
+#define DEFER_STRINGIFY(S) STRINGIFY(S)
+#define PRAGMA_MESSAGE(MSG) _Pragma(STRINGIFY(message(MSG)))
+#define FORMATTED_MESSAGE(MSG) "[TODO-" DEFER_STRINGIFY(__COUNTER__) "] " MSG " \n" \
+DEFER_STRINGIFY(__FILE__) " line " DEFER_STRINGIFY(__LINE__)
+// 最终使用下面的宏
+#define TODO(MSG) PRAGMA_MESSAGE(FORMATTED_MESSAGE(MSG))

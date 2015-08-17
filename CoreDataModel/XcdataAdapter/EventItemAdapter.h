@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-
-@class EventItem, ProjectItem, PersonItem;
+#import "EventItem.h"
+#import "ProjectItem.h"
+#import "PersonItem.h"
 
 @interface EventItemAdapter : NSObject
 
@@ -17,6 +18,7 @@
 @property (nonatomic, strong, readonly) NSString *day;
 @property (nonatomic, strong, readonly) NSString *date;
 
+@property (nonatomic, strong) NSString *eventItemId;
 @property (nonatomic, assign) NSInteger createStamp;
 @property (nonatomic, assign) NSInteger startStamp;
 @property (nonatomic, assign) NSInteger endStamp;
