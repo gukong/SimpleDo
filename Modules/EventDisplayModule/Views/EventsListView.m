@@ -7,11 +7,11 @@
 //
 
 #import "EventsListView.h"
-#import "RefreshControlTableView.h"
 #import "EventDisplayDataManager.h"
-#import "EventItemAdapter.h"
+#import "UIScrollView+GKRefresh.h"
+#import "EventTableViewCell.h"
 
-@interface EventsListView ()<UITableViewDataSource>
+@interface EventsListView ()<UITableViewDataSource, NSFetchedResultsControllerDelegate, GKRefreshControlDelegate>
 
 @end
 
@@ -39,22 +39,59 @@
 }
 
 - (void)setupViews {
-    _eventTableView = [[RefreshControlTableView alloc] initWithFrame:self.bounds];
+    _eventTableView = [[UITableView alloc] initWithFrame:self.bounds style:UITableViewStyleGrouped];
     [_eventTableView setDataSource:self];
-    [_eventTableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UITableViewCell"];
+    [_eventTableView setContentInset:UIEdgeInsetsMake(64.f, 0, 0, 0)];
+    [_eventTableView setCanPullDownToRefresh:YES];
+    [_eventTableView setRefreshControlDelegate:self];
+    [_eventTableView registerClass:[EventTableViewCell class] forCellReuseIdentifier:@"EventTableViewCell"];
     [self addSubview:_eventTableView];
 }
 
+- (void)setDataManager:(EventDisplayDataManager *)dataManager {
+    _dataManager = dataManager;
+    [dataManager setFetchedDelegate:self];
+}
+
 #pragma mark - UITableViewDataSource
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return [_dataManager numberOfSetions];
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return [_dataManager numberOfItemsInSection:section];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"UITableViewCell"];
-    [cell.textLabel setText:@""];
+    EventItem *eventItem = [_dataManager dataItemAtIndexPath:indexPath];
+    EventTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"EventTableViewCell"];
+    [cell configWithEventItem:eventItem];
     return cell;
+}
+
+#pragma mark - GKRefreshControlDelegate
+
+- (void)startPullDownLoading:(UIScrollView *)scrollView {
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(4 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [_eventTableView stopLoadingView];
+    });
+}
+
+#pragma mark - NSFetchedResultsControllerDelegate
+- (void)controller:(NSFetchedResultsController *)controller didChangeObject:(id)anObject atIndexPath:(NSIndexPath *)indexPath forChangeType:(NSFetchedResultsChangeType)type newIndexPath:(NSIndexPath *)newIndexPath {
+    
+}
+- (void)controller:(NSFetchedResultsController *)controller didChangeSection:(id <NSFetchedResultsSectionInfo>)sectionInfo atIndex:(NSUInteger)sectionIndex forChangeType:(NSFetchedResultsChangeType)type {
+    
+}
+
+- (void)controllerWillChangeContent:(NSFetchedResultsController *)controller {
+    
+}
+
+- (void)controllerDidChangeContent:(NSFetchedResultsController *)controller {
+    
 }
 
 

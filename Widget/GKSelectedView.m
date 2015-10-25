@@ -1,22 +1,14 @@
 //
-//  RefreshControlTableView.m
+//  GKSelectedView.m
 //  SimpleDo
 //
-//  Created by gukong on 15/8/7.
+//  Created by gukong on 15/8/30.
 //  Copyright (c) 2015年 gukong. All rights reserved.
 //
 
-#import "RefreshControlTableView.h"
+#import "GKSelectedView.h"
 
-@implementation RefreshControlTableView
-
-- (id)init {
-    self = [super init];
-    if (self) {
-        
-    }
-    return self;
-}
+@implementation GKSelectedView
 
 /*
 // Only override drawRect: if you perform custom drawing.

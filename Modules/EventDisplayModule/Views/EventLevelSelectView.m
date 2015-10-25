@@ -1,14 +1,14 @@
 //
-//  BaseTableView.m
+//  EventLevelSelectView.m
 //  SimpleDo
 //
-//  Created by gukong on 15/8/7.
+//  Created by gukong on 15/9/6.
 //  Copyright (c) 2015年 gukong. All rights reserved.
 //
 
-#import "BaseTableView.h"
+#import "EventLevelSelectView.h"
 
-@implementation BaseTableView
+@implementation EventLevelSelectView
 
 /*
 // Only override drawRect: if you perform custom drawing.
@@ -17,6 +17,5 @@
     // Drawing code
 }
 */
-
 
 @end

@@ -12,7 +12,7 @@
 
 @interface EventsListView : UIView<NSFetchedResultsControllerDelegate>
 
-@property (nonatomic, strong, readonly) RefreshControlTableView *eventTableView;
+@property (nonatomic, strong, readonly) UITableView *eventTableView;
 @property (nonatomic, weak) EventDisplayDataManager *dataManager;
 
 @end

@@ -9,7 +9,7 @@
 #import "EventItem.h"
 
 @interface EventItem ()
-@property (nonatomic) NSDate *primitiveCreateStamp;
+@property (nonatomic) NSDate *primitiveStartStamp;
 @property (nonatomic) NSString *primitiveSectionIdentifier;
 @end
 
@@ -24,7 +24,7 @@
 @dynamic status;
 @dynamic tag;
 @dynamic sectionIdentifier;
-@dynamic primitiveCreateStamp;
+@dynamic primitiveStartStamp;
 @dynamic primitiveSectionIdentifier;
 @dynamic eventItemId;
 
@@ -37,22 +37,24 @@
     if (!tmp)
     {
         NSCalendar *calendar = [NSCalendar currentCalendar];
-        
-        NSDateComponents *components = [calendar components:(NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay) fromDate:[self createStamp]];
+        NSDateComponents *components = [calendar components:(NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay) fromDate:[self startStamp]];
         tmp = [NSString stringWithFormat:@"%d %d %d", (int)components.day, (int)components.month, (int)components.year];
+        [self willChangeValueForKey:@"sectionIdentifier"];
         [self setPrimitiveSectionIdentifier:tmp];
+        [self didChangeValueForKey:@"sectionIdentifier"];
     }
     return tmp;
 }
 
 #pragma mark - Time stamp setter
-- (void)setCreateStamp:(NSDate *)createStamp {
-    [self willChangeValueForKey:@"createStamp"];
-    [self setPrimitiveCreateStamp:createStamp];
-    [self didChangeValueForKey:@"createStamp"];
+- (void)setStartStamp:(NSDate *)startStamp {
+    [self willChangeValueForKey:@"startStamp"];
+    [self setPrimitiveStartStamp:startStamp];
+    [self didChangeValueForKey:@"startStamp"];
     
+    [self willChangeValueForKey:@"sectionIdentifier"];
     [self setPrimitiveSectionIdentifier:nil];
-
+    [self didChangeValueForKey:@"sectionIdentifier"];
 }
 
 #pragma mark - Key path dependencies
@@ -61,11 +63,5 @@
 {
     // If the value of timeStamp changes, the section identifier may change as well.
     return [NSSet setWithObject:@"createStamp"];
-}
-
-- (NSTimeInterval)remainingTime {
-    NSTimeInterval time = [[NSDate date] timeIntervalSince1970];
-    NSTimeInterval remainingTime = [self.startStamp timeIntervalSince1970] - time;
-    return remainingTime;
 }
 @end

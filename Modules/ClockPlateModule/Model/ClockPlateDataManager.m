@@ -31,11 +31,6 @@
 }
 
 - (void)setupFetchedController {
-
-//    EventItem *item = [EventItem MR_createEntityInContext:[NSManagedObjectContext MR_defaultContext]];
-//    [item setStartStamp:@([[NSDate date] timeIntervalSince1970] + 50000)];
-//    [item setEventType:@(EventType_NIM_NEM)];
-//    [[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreAndWait];
     
     _fetchedController = [EventItem MR_fetchAllSortedBy:@"startStamp"
                                               ascending:YES
@@ -49,6 +44,7 @@
     if (error) {
         abort();
     }
+    [[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreAndWait];
 }
 
 - (void)setupDataSource {
@@ -101,16 +97,19 @@
 }
 
 - (void)reFetchImminentEvents {
-    NSTimeInterval nowTime = [[NSDate date] timeIntervalSince1970];
+    
+    NSDate *todayDate = [NSDate date];
+    NSDate *tomorDate = [todayDate dateByAddingDays:1];
+    
     NSSortDescriptor *firstDescriptor = [[NSSortDescriptor alloc] initWithKey:@"startStamp" ascending:YES];
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"(eventType = %@) && startStamp > %@ && startStamp < %@",@(_eventType),@(nowTime),@(nowTime+SECONDS_IN_DAY)];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"(eventType = %@) && startStamp > %@ && startStamp < %@",@(_eventType),todayDate,tomorDate];
     
     NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:@"EventItem"];
     fetchRequest.predicate = predicate;
     fetchRequest.sortDescriptors = @[firstDescriptor];
     fetchRequest.fetchLimit = MaxCountOfWaveViews;
 
-//    _eventItems = [EventItemStore fetchObjectsWithRequest:fetchRequest];
+    _eventItems = [EventItemStore fetchObjectsWithRequest:fetchRequest];
 }
 
 @end

@@ -23,6 +23,9 @@
 @property (nonatomic, retain) NSString * sectionIdentifier;
 @property (nonatomic, retain) NSString * eventItemId;
 
-@property (nonatomic, readonly) NSTimeInterval remainingTime;
+@end
 
+@interface EventItem (Adapter)
+@property (nonatomic, assign, readonly) NSTimeInterval remainingTime;
+@property (nonatomic, strong, readonly) NSString *startTime;
 @end

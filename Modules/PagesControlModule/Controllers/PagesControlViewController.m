@@ -12,15 +12,18 @@
 #import "PagesDataManager.h"
 #import "PageNavigationBar.h"
 #import "EventItem.h"
+#import "MenuBarView.h"
+#import "CreateEventViewController.h"
 
-@interface PagesControlViewController () <PagesControlDelegate, PageNavigationBarDelegate> {
+@interface PagesControlViewController () <PagesControlDelegate, PageNavigationBarDelegate, MenuBarViewDelegate> {
     
     
 }
+
 @property (nonatomic, strong) PageNavigationBar *pageNavigationBar;
 @property (nonatomic, strong) PagesDataManager *pagesDataManager;
 @property (nonatomic, strong) PagesControlView *controlView;
-
+@property (nonatomic, strong) MenuBarView *tabBar;
 
 @end
 
@@ -43,6 +46,7 @@
 - (void)setupViews {
     [self setupControlView];
     [self setupNavigationBar];
+    [self setupTabBar];
 }
 
 - (void)setupNavigationBar {
@@ -66,13 +70,19 @@
     [self.view addSubview:_controlView];
 }
 
+- (void)setupTabBar {
+    _tabBar = [[MenuBarView alloc] initWithFrame:CGRectMake(0, Height_V(self.view)-44.f, Width_V(self.view), 44.f)];
+    [_tabBar setDelegate:self];
+    [self.view addSubview:_tabBar];
+}
+
 #pragma mark - PagesControlDelegate
 - (void)controlViewDidScroll:(PagesControlView *)controlView {
 
 }
 
 - (void)controlView:(PagesControlView *)controlView fromPage:(NSInteger)fromPage toPage:(NSInteger)toPage {
-    
+
 }
 
 #pragma mark - PageNavigationBarDelegate
@@ -81,6 +91,14 @@
     if (_pageNavigationBar.currentIndex != index) {
         [_controlView scrollToPage:index];
     }
+}
+
+#pragma mark - MenuBarViewDelegate
+
+- (void)createNewEvent:(MenuBarView *)menuBarView {
+    CreateEventViewController *controller = [[CreateEventViewController alloc] init];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:controller];
+    [self presentViewController:nav animated:YES completion:nil];
 }
 
 @end

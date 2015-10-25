@@ -26,11 +26,11 @@
 
 - (void)setupDataModle {
     NSArray *willDisplayEventTypes = @[@(EventType_IM_EM),@(EventType_IM_NEM),@(EventType_NIM_EM),@(EventType_NIM_NEM)];
-    _dataManager = [[EventDisplayDataManager alloc] initTodayEventlistWithEventTypes:willDisplayEventTypes];
+    _dataManager = [[EventDisplayDataManager alloc] initTodayEventlistWithEventTypes:willDisplayEventTypes delegate:nil];
 }
 
 - (void)setupViews {
-    _eventsListView = [[EventsListView alloc] initWithFrame:self.view.bounds];
+    _eventsListView = [[EventsListView alloc] initWithFrame:CGRectMake(0, NavigationBarHeight, Width_V(self.view), Height_V(self.view)-NavigationBarHeight)];
     [_eventsListView setDataManager:_dataManager];
     [_eventsListView setBackgroundColor:[UIColor whiteColor]];
     [self.view addSubview:_eventsListView];
