@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		770EE8711C0ACE5800EBC263 /* TimePlateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 770EE8701C0ACE5800EBC263 /* TimePlateView.m */; };
+		770EE8771C0AD44900EBC263 /* ElasticRope.m in Sources */ = {isa = PBXBuildFile; fileRef = 770EE8741C0AD44900EBC263 /* ElasticRope.m */; };
+		770EE8781C0AD44900EBC263 /* GKGravityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 770EE8761C0AD44900EBC263 /* GKGravityView.m */; };
 		771936A01B84D039001740EC /* BaseFetchedControllerDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7719369F1B84D039001740EC /* BaseFetchedControllerDataManager.m */; };
 		771DC2921B5EC9EF008B4F9A /* EventItemStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 771DC2911B5EC9EF008B4F9A /* EventItemStore.m */; };
 		771DC2951B5ECD88008B4F9A /* BaseManagedObjectStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 771DC2941B5ECD88008B4F9A /* BaseManagedObjectStore.m */; };
 		772859D11B4D8C3100204E24 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 772859CD1B4D8C3100204E24 /* LaunchScreen.xib */; };
 		772859D21B4D8C3100204E24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 772859CF1B4D8C3100204E24 /* Main.storyboard */; };
+		772D93401C85EDC600B68CEF /* BaseEditCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 772D933F1C85EDC600B68CEF /* BaseEditCell.m */; };
+		772D93431C85EDF500B68CEF /* BaseDataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 772D93421C85EDF500B68CEF /* BaseDataItem.m */; };
 		7746D7DC1B9BDC1B008966FA /* CreateEventItemControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 7746D7DB1B9BDC1B008966FA /* CreateEventItemControl.m */; };
-		7746D7DF1B9BDE9F008966FA /* EventLevelSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7746D7DE1B9BDE9F008966FA /* EventLevelSelectView.m */; };
 		776C11501B913EAC0071437C /* GKIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 776C114D1B913EAC0071437C /* GKIndicatorView.m */; };
 		776C11511B913EAC0071437C /* UIScrollView+GKRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 776C114F1B913EAC0071437C /* UIScrollView+GKRefresh.m */; };
 		776C11551B9298890071437C /* QCMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 776C11541B9298890071437C /* QCMethod.m */; };
@@ -23,11 +27,12 @@
 		776C11621B92A54D0071437C /* GKSelectedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 776C11611B92A54D0071437C /* GKSelectedView.m */; };
 		776C116A1B92B63A0071437C /* EventItem+Adapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 776C11691B92B63A0071437C /* EventItem+Adapter.m */; };
 		776C11721B9738760071437C /* MenuBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 776C11711B9738760071437C /* MenuBarView.m */; };
-		776C11771B9741560071437C /* CreateEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 776C11761B9741560071437C /* CreateEventViewController.m */; };
 		776CD4971B5D56D700366FBE /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 776CD4961B5D56D700366FBE /* CoreData.framework */; };
 		77782D421B330DC800CC48F9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77782D411B330DC800CC48F9 /* main.m */; };
 		77782D451B330DC800CC48F9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77782D441B330DC800CC48F9 /* AppDelegate.m */; };
 		77782D5F1B330DC800CC48F9 /* SimpleDoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 77782D5E1B330DC800CC48F9 /* SimpleDoTests.m */; };
+		7788D7301C0CA17800189CE2 /* CreateEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7788D72D1C0CA17800189CE2 /* CreateEventViewController.m */; };
+		7788D73C1C0CA70600189CE2 /* bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = 7788D73B1C0CA70600189CE2 /* bubble.png */; };
 		778919DF1B67ACEF00CCE74C /* PagesDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 778919DE1B67ACEF00CCE74C /* PagesDataManager.m */; };
 		778919E81B67CEB400CCE74C /* PageNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 778919E71B67CEB400CCE74C /* PageNavigationBar.m */; };
 		778919EF1B67E94900CCE74C /* PageNavigationItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 778919EE1B67E94900CCE74C /* PageNavigationItem.m */; };
@@ -55,6 +60,9 @@
 		77EAE53D1B6BD9ED00D7395D /* EventDisplayDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EAE53C1B6BD9ED00D7395D /* EventDisplayDataManager.m */; };
 		77EAE5671B711AE900D7395D /* EventsListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EAE5661B711AE900D7395D /* EventsListView.m */; };
 		77EAE56A1B711BD300D7395D /* EventsDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EAE5691B711BD300D7395D /* EventsDisplayViewController.m */; };
+		77FE33C61C13F728001A86CD /* EventLevelSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FE33C51C13F728001A86CD /* EventLevelSelectView.m */; };
+		77FE33C91C13F764001A86CD /* TopTrangleBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FE33C81C13F764001A86CD /* TopTrangleBubbleView.m */; };
+		77FE33CE1C143302001A86CD /* CreateEventInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FE33CD1C143302001A86CD /* CreateEventInfoCell.m */; };
 		77FE86301B5018F1000A147A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77FE862F1B5018F1000A147A /* Images.xcassets */; };
 		9BE4223D58C923AAB4394FBB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7691BA57FB0010B626317E60 /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -72,6 +80,12 @@
 /* Begin PBXFileReference section */
 		7400CAC9AE85D6FC5528E120 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		7691BA57FB0010B626317E60 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		770EE86F1C0ACE5800EBC263 /* TimePlateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimePlateView.h; sourceTree = "<group>"; };
+		770EE8701C0ACE5800EBC263 /* TimePlateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimePlateView.m; sourceTree = "<group>"; };
+		770EE8731C0AD44900EBC263 /* ElasticRope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ElasticRope.h; sourceTree = "<group>"; };
+		770EE8741C0AD44900EBC263 /* ElasticRope.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ElasticRope.m; sourceTree = "<group>"; };
+		770EE8751C0AD44900EBC263 /* GKGravityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKGravityView.h; sourceTree = "<group>"; };
+		770EE8761C0AD44900EBC263 /* GKGravityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKGravityView.m; sourceTree = "<group>"; };
 		7719369E1B84D039001740EC /* BaseFetchedControllerDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseFetchedControllerDataManager.h; sourceTree = "<group>"; };
 		7719369F1B84D039001740EC /* BaseFetchedControllerDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseFetchedControllerDataManager.m; sourceTree = "<group>"; };
 		771DC2901B5EC9EF008B4F9A /* EventItemStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EventItemStore.h; path = CoreDataModel/XcdataStore/EventItemStore.h; sourceTree = SOURCE_ROOT; };
@@ -80,10 +94,12 @@
 		771DC2941B5ECD88008B4F9A /* BaseManagedObjectStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseManagedObjectStore.m; path = CoreDataModel/XcdataStore/BaseManagedObjectStore.m; sourceTree = SOURCE_ROOT; };
 		772859CE1B4D8C3100204E24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		772859D01B4D8C3100204E24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		772D933E1C85EDC600B68CEF /* BaseEditCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseEditCell.h; path = BaseView/BaseEditCell.h; sourceTree = "<group>"; };
+		772D933F1C85EDC600B68CEF /* BaseEditCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseEditCell.m; path = BaseView/BaseEditCell.m; sourceTree = "<group>"; };
+		772D93411C85EDF500B68CEF /* BaseDataItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseDataItem.h; sourceTree = "<group>"; };
+		772D93421C85EDF500B68CEF /* BaseDataItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseDataItem.m; sourceTree = "<group>"; };
 		7746D7DA1B9BDC1B008966FA /* CreateEventItemControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateEventItemControl.h; sourceTree = "<group>"; };
 		7746D7DB1B9BDC1B008966FA /* CreateEventItemControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateEventItemControl.m; sourceTree = "<group>"; };
-		7746D7DD1B9BDE9F008966FA /* EventLevelSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventLevelSelectView.h; sourceTree = "<group>"; };
-		7746D7DE1B9BDE9F008966FA /* EventLevelSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventLevelSelectView.m; sourceTree = "<group>"; };
 		776C114C1B913EAC0071437C /* GKIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKIndicatorView.h; sourceTree = "<group>"; };
 		776C114D1B913EAC0071437C /* GKIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKIndicatorView.m; sourceTree = "<group>"; };
 		776C114E1B913EAC0071437C /* UIScrollView+GKRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+GKRefresh.h"; sourceTree = "<group>"; };
@@ -101,8 +117,6 @@
 		776C11691B92B63A0071437C /* EventItem+Adapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EventItem+Adapter.m"; sourceTree = "<group>"; };
 		776C11701B9738760071437C /* MenuBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuBarView.h; sourceTree = "<group>"; };
 		776C11711B9738760071437C /* MenuBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuBarView.m; sourceTree = "<group>"; };
-		776C11751B9741560071437C /* CreateEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateEventViewController.h; sourceTree = "<group>"; };
-		776C11761B9741560071437C /* CreateEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateEventViewController.m; sourceTree = "<group>"; };
 		776CD4961B5D56D700366FBE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		77782D3C1B330DC800CC48F9 /* SimpleDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77782D401B330DC800CC48F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -115,6 +129,10 @@
 		77782DBE1B35BD9F00CC48F9 /* EventItemChangedDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventItemChangedDelegate.h; sourceTree = "<group>"; };
 		77782DBF1B35BDC800CC48F9 /* TimeLineDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeLineDelegate.h; sourceTree = "<group>"; };
 		77782DC01B35BEAC00CC48F9 /* DialPlateDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DialPlateDelegate.h; sourceTree = "<group>"; };
+		7788D72C1C0CA17800189CE2 /* CreateEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateEventViewController.h; sourceTree = "<group>"; };
+		7788D72D1C0CA17800189CE2 /* CreateEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateEventViewController.m; sourceTree = "<group>"; };
+		7788D7321C0CA27C00189CE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7788D73B1C0CA70600189CE2 /* bubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bubble.png; sourceTree = "<group>"; };
 		778919DD1B67ACEF00CCE74C /* PagesDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PagesDataManager.h; sourceTree = "<group>"; };
 		778919DE1B67ACEF00CCE74C /* PagesDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PagesDataManager.m; sourceTree = "<group>"; };
 		778919E11B67AE8F00CCE74C /* BaseMVCProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseMVCProtocol.h; sourceTree = "<group>"; };
@@ -140,10 +158,6 @@
 		779EDCC71B52B34300EAE9E8 /* SimpleDo.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleDo.pch; sourceTree = "<group>"; };
 		77A12EB51B600CAE003EC8F6 /* UIView+Positioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Positioning.h"; sourceTree = "<group>"; };
 		77A12EB61B600CAE003EC8F6 /* UIView+Positioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Positioning.m"; sourceTree = "<group>"; };
-		77DEDEF91B54101200189BC9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		77DEDEFB1B54128E00189BC9 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		77DEDEFC1B54128E00189BC9 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
-		77DEDEFD1B54128E00189BC9 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		77E2973B1B63CB9700B12AB2 /* ClockPlateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockPlateViewController.h; sourceTree = "<group>"; };
 		77E2973C1B63CB9700B12AB2 /* ClockPlateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockPlateViewController.m; sourceTree = "<group>"; };
 		77E2973E1B63CB9700B12AB2 /* ClockPlateDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockPlateDataManager.h; sourceTree = "<group>"; };
@@ -173,6 +187,12 @@
 		77EAE5681B711BD300D7395D /* EventsDisplayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventsDisplayViewController.h; sourceTree = "<group>"; };
 		77EAE5691B711BD300D7395D /* EventsDisplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventsDisplayViewController.m; sourceTree = "<group>"; };
 		77F728851B5B677F00BCF981 /* AppEnum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppEnum.h; sourceTree = "<group>"; };
+		77FE33C41C13F728001A86CD /* EventLevelSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventLevelSelectView.h; sourceTree = "<group>"; };
+		77FE33C51C13F728001A86CD /* EventLevelSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventLevelSelectView.m; sourceTree = "<group>"; };
+		77FE33C71C13F764001A86CD /* TopTrangleBubbleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopTrangleBubbleView.h; sourceTree = "<group>"; };
+		77FE33C81C13F764001A86CD /* TopTrangleBubbleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopTrangleBubbleView.m; sourceTree = "<group>"; };
+		77FE33CC1C143302001A86CD /* CreateEventInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateEventInfoCell.h; sourceTree = "<group>"; };
+		77FE33CD1C143302001A86CD /* CreateEventInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateEventInfoCell.m; sourceTree = "<group>"; };
 		77FE862F1B5018F1000A147A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		786C18BA72A8461CC3070F75 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -197,6 +217,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		770EE8721C0AD44900EBC263 /* GKGravityView */ = {
+			isa = PBXGroup;
+			children = (
+				770EE8731C0AD44900EBC263 /* ElasticRope.h */,
+				770EE8741C0AD44900EBC263 /* ElasticRope.m */,
+				770EE8751C0AD44900EBC263 /* GKGravityView.h */,
+				770EE8761C0AD44900EBC263 /* GKGravityView.m */,
+			);
+			path = GKGravityView;
+			sourceTree = "<group>";
+		};
 		775B64D81B6A5C0900E05F52 /* EventDisplayModule */ = {
 			isa = PBXGroup;
 			children = (
@@ -212,8 +243,6 @@
 			children = (
 				77EAE5681B711BD300D7395D /* EventsDisplayViewController.h */,
 				77EAE5691B711BD300D7395D /* EventsDisplayViewController.m */,
-				776C11751B9741560071437C /* CreateEventViewController.h */,
-				776C11761B9741560071437C /* CreateEventViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -238,8 +267,6 @@
 				776C115D1B92A3080071437C /* EventSectionView.m */,
 				7746D7DA1B9BDC1B008966FA /* CreateEventItemControl.h */,
 				7746D7DB1B9BDC1B008966FA /* CreateEventItemControl.m */,
-				7746D7DD1B9BDE9F008966FA /* EventLevelSelectView.h */,
-				7746D7DE1B9BDE9F008966FA /* EventLevelSelectView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -269,6 +296,7 @@
 		776C115F1B92A5170071437C /* Widget */ = {
 			isa = PBXGroup;
 			children = (
+				77FE33C31C13F728001A86CD /* EventLevelSelectView */,
 				776C11601B92A54D0071437C /* GKSelectedView.h */,
 				776C11611B92A54D0071437C /* GKSelectedView.m */,
 			);
@@ -392,6 +420,7 @@
 		77782D961B332E6E00CC48F9 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				7788D73B1C0CA70600189CE2 /* bubble.png */,
 				77FE862F1B5018F1000A147A /* Images.xcassets */,
 			);
 			path = Resource;
@@ -409,6 +438,41 @@
 			path = ../Protocol;
 			sourceTree = "<group>";
 		};
+		7788D7271C0CA13800189CE2 /* CreateEventModule */ = {
+			isa = PBXGroup;
+			children = (
+				7788D72B1C0CA17800189CE2 /* Controllers */,
+				7788D72E1C0CA17800189CE2 /* Views */,
+				7788D72F1C0CA17800189CE2 /* Model */,
+			);
+			path = CreateEventModule;
+			sourceTree = "<group>";
+		};
+		7788D72B1C0CA17800189CE2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7788D72C1C0CA17800189CE2 /* CreateEventViewController.h */,
+				7788D72D1C0CA17800189CE2 /* CreateEventViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7788D72E1C0CA17800189CE2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				77FE33CC1C143302001A86CD /* CreateEventInfoCell.h */,
+				77FE33CD1C143302001A86CD /* CreateEventInfoCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7788D72F1C0CA17800189CE2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		778919E21B67AFB500CCE74C /* BaseDataModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -418,6 +482,8 @@
 				7794946A1B7BA8CA009A5419 /* BaseMutableSectionDataManager.m */,
 				7719369E1B84D039001740EC /* BaseFetchedControllerDataManager.h */,
 				7719369F1B84D039001740EC /* BaseFetchedControllerDataManager.m */,
+				772D93411C85EDF500B68CEF /* BaseDataItem.h */,
+				772D93421C85EDF500B68CEF /* BaseDataItem.m */,
 			);
 			path = BaseDataModel;
 			sourceTree = "<group>";
@@ -436,6 +502,7 @@
 		7794945B1B74F2AB009A5419 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				770EE8721C0AD44900EBC263 /* GKGravityView */,
 				776C114B1B913EAC0071437C /* RefreshControl */,
 			);
 			path = Components;
@@ -480,6 +547,7 @@
 		779EDCAA1B52896C00EAE9E8 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				7788D7271C0CA13800189CE2 /* CreateEventModule */,
 				775B64D81B6A5C0900E05F52 /* EventDisplayModule */,
 				77E297491B63CB9700B12AB2 /* MainModule */,
 				77E2975F1B666CD600B12AB2 /* PagesControlModule */,
@@ -529,6 +597,8 @@
 				77E297461B63CB9700B12AB2 /* RhombusCell.m */,
 				77E297471B63CB9700B12AB2 /* RhombusViewLayout.h */,
 				77E297481B63CB9700B12AB2 /* RhombusViewLayout.m */,
+				770EE86F1C0ACE5800EBC263 /* TimePlateView.h */,
+				770EE8701C0ACE5800EBC263 /* TimePlateView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -606,6 +676,17 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		77FE33C31C13F728001A86CD /* EventLevelSelectView */ = {
+			isa = PBXGroup;
+			children = (
+				77FE33C41C13F728001A86CD /* EventLevelSelectView.h */,
+				77FE33C51C13F728001A86CD /* EventLevelSelectView.m */,
+				77FE33C71C13F764001A86CD /* TopTrangleBubbleView.h */,
+				77FE33C81C13F764001A86CD /* TopTrangleBubbleView.m */,
+			);
+			path = EventLevelSelectView;
+			sourceTree = "<group>";
+		};
 		77FE862D1B501894000A147A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -640,6 +721,8 @@
 				779494591B74F1DD009A5419 /* BaseTableView.m */,
 				77E2976C1B667AF600B12AB2 /* BaseCollectionView.h */,
 				77E2976D1B667AF600B12AB2 /* BaseCollectionView.m */,
+				772D933E1C85EDC600B68CEF /* BaseEditCell.h */,
+				772D933F1C85EDC600B68CEF /* BaseEditCell.m */,
 			);
 			name = BaseView;
 			sourceTree = "<group>";
@@ -716,9 +799,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
-				"zh-Hans",
 			);
 			mainGroup = 77782D331B330DC800CC48F9;
 			productRefGroup = 77782D3D1B330DC800CC48F9 /* Products */;
@@ -740,6 +821,7 @@
 				77DEDEF81B54101200189BC9 /* Localizable.strings in Resources */,
 				772859D21B4D8C3100204E24 /* Main.storyboard in Resources */,
 				772859D11B4D8C3100204E24 /* LaunchScreen.xib in Resources */,
+				7788D73C1C0CA70600189CE2 /* bubble.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -795,21 +877,27 @@
 				779494681B7BA8B4009A5419 /* BaseSingleSectionDataManager.m in Sources */,
 				7746D7DC1B9BDC1B008966FA /* CreateEventItemControl.m in Sources */,
 				778919E81B67CEB400CCE74C /* PageNavigationBar.m in Sources */,
+				77FE33C61C13F728001A86CD /* EventLevelSelectView.m in Sources */,
+				772D93401C85EDC600B68CEF /* BaseEditCell.m in Sources */,
 				776C115E1B92A3080071437C /* EventSectionView.m in Sources */,
 				779EDCA91B52888900EAE9E8 /* SimpleDo.xcdatamodeld in Sources */,
 				77E2974F1B63CB9700B12AB2 /* ClockPlateView.m in Sources */,
 				77782D451B330DC800CC48F9 /* AppDelegate.m in Sources */,
+				770EE8781C0AD44900EBC263 /* GKGravityView.m in Sources */,
 				77EAE53D1B6BD9ED00D7395D /* EventDisplayDataManager.m in Sources */,
-				776C11771B9741560071437C /* CreateEventViewController.m in Sources */,
 				77E297681B666ED800B12AB2 /* PagesControlViewController.m in Sources */,
 				771936A01B84D039001740EC /* BaseFetchedControllerDataManager.m in Sources */,
+				770EE8771C0AD44900EBC263 /* ElasticRope.m in Sources */,
 				77E2974D1B63CB9700B12AB2 /* ClockPlateDataManager.m in Sources */,
+				770EE8711C0ACE5800EBC263 /* TimePlateView.m in Sources */,
 				77E2974C1B63CB9700B12AB2 /* ClockPlateViewController.m in Sources */,
+				77FE33CE1C143302001A86CD /* CreateEventInfoCell.m in Sources */,
 				776C11721B9738760071437C /* MenuBarView.m in Sources */,
 				779EDCA61B52888900EAE9E8 /* EventItem.m in Sources */,
 				77EAE5671B711AE900D7395D /* EventsListView.m in Sources */,
 				7794946B1B7BA8CA009A5419 /* BaseMutableSectionDataManager.m in Sources */,
 				77782D421B330DC800CC48F9 /* main.m in Sources */,
+				77FE33C91C13F764001A86CD /* TopTrangleBubbleView.m in Sources */,
 				776C11581B9299010071437C /* SquareView.m in Sources */,
 				77E297571B63D1BB00B12AB2 /* BaseViewController.m in Sources */,
 				77E2976E1B667AF600B12AB2 /* BaseCollectionView.m in Sources */,
@@ -820,7 +908,6 @@
 				7794945A1B74F1DD009A5419 /* BaseTableView.m in Sources */,
 				771DC2951B5ECD88008B4F9A /* BaseManagedObjectStore.m in Sources */,
 				77E297511B63CB9700B12AB2 /* RhombusViewLayout.m in Sources */,
-				7746D7DF1B9BDE9F008966FA /* EventLevelSelectView.m in Sources */,
 				779EDCA71B52888900EAE9E8 /* PersonItem.m in Sources */,
 				771DC2921B5EC9EF008B4F9A /* EventItemStore.m in Sources */,
 				776C11551B9298890071437C /* QCMethod.m in Sources */,
@@ -828,7 +915,9 @@
 				776C11621B92A54D0071437C /* GKSelectedView.m in Sources */,
 				77EAE56A1B711BD300D7395D /* EventsDisplayViewController.m in Sources */,
 				77E2974E1B63CB9700B12AB2 /* AnimatedWaveView.m in Sources */,
+				772D93431C85EDF500B68CEF /* BaseDataItem.m in Sources */,
 				776C11501B913EAC0071437C /* GKIndicatorView.m in Sources */,
+				7788D7301C0CA17800189CE2 /* CreateEventViewController.m in Sources */,
 				778919DF1B67ACEF00CCE74C /* PagesDataManager.m in Sources */,
 				779EDCA81B52888900EAE9E8 /* ProjectItem.m in Sources */,
 				776C115B1B92A2F20071437C /* EventTableViewCell.m in Sources */,
@@ -859,7 +948,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				772859CE1B4D8C3100204E24 /* Base */,
-				77DEDEFC1B54128E00189BC9 /* zh-Hans */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -868,7 +956,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				772859D01B4D8C3100204E24 /* Base */,
-				77DEDEFD1B54128E00189BC9 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -876,8 +963,7 @@
 		77DEDEFA1B54101200189BC9 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				77DEDEF91B54101200189BC9 /* en */,
-				77DEDEFB1B54128E00189BC9 /* zh-Hans */,
+				7788D7321C0CA27C00189CE2 /* Base */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";

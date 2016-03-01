@@ -107,7 +107,7 @@
     NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:@"EventItem"];
     fetchRequest.predicate = predicate;
     fetchRequest.sortDescriptors = @[firstDescriptor];
-    fetchRequest.fetchLimit = MaxCountOfWaveViews;
+    fetchRequest.fetchLimit = 1;
 
     _eventItems = [EventItemStore fetchObjectsWithRequest:fetchRequest];
 }

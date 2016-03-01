@@ -10,12 +10,15 @@
 #import "AnimatedWaveView.h"
 #import "EventItem.h"
 #import "ClockPlateDataManager.h"
+#import "TimePlateView.h"
+#import "GKGravityView.h"
 
-@interface RhombusCell ()<AnimatedWaveDelegate>
+@interface RhombusCell ()<TimePlateDelegate>
 
-@property (nonatomic, strong) NSMutableArray *waveViewsArray;
 @property (nonatomic, strong) ClockPlateDataItem *plateDataItem;
-
+@property (nonatomic, strong) AnimatedWaveView *waveView;
+@property (nonatomic, strong) TimePlateView *timePlateView;
+@property (nonatomic, strong) GKGravityView *gravityView;
 @end
 
 @implementation RhombusCell
@@ -23,30 +26,34 @@
 - (id)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        _waveViewsArray = [[NSMutableArray alloc] init];
         [self setupViews];
     }
     return self;
 }
 
 - (void)setupViews {
-    for (int i = 0; i < MaxCountOfWaveViews; i ++) {
-        AnimatedWaveView *waveView = [[AnimatedWaveView alloc] initWithFrame:CGRectMake(0, 0, Width_V(self), Height_V(self))];
-        [waveView setDelegate:self];
-        [_waveViewsArray addObject:waveView];
-    }
+    _waveView = [[AnimatedWaveView alloc] initWithFrame:CGRectMake(0, 0, Width_V(self), Height_V(self))];
+    
+    _timePlateView = [[TimePlateView alloc] initWithFrame:CGRectMake(0, 0, 70.f, 20.f)];
+    [_timePlateView.layer setMasksToBounds:YES];
+    [_timePlateView.layer setCornerRadius:5.f];
+    [_timePlateView setBackgroundColor:[UIColor colorWithWhite:0 alpha:0.1]];
+    [_timePlateView setDelegate:self];
+    
+    _gravityView = [[GKGravityView alloc] initWithFrame:CGRectMake(0, 0, 80.f, 80.f)];
+    [_gravityView setupCustomView:_timePlateView fixedAnchorDistance:60.f blurStyle:GKGravityViewCustomViewBlurStyle_BlurEffect];
 }
 
 - (void)configWithDataItem:(ClockPlateDataItem *)plateDataItem {
     _plateDataItem = plateDataItem;
-    for (int i = 0; i < MaxCountOfWaveViews && i < plateDataItem.eventItems.count && i < _waveViewsArray.count; i ++) {
-        EventItem *eventItem = [plateDataItem.eventItems objectAtIndex:i];
-        AnimatedWaveView *waveView = [_waveViewsArray objectAtIndex:i];
+    if (plateDataItem.eventItems.count > 0) {
+        EventItem *eventItem = [plateDataItem.eventItems firstObject];
         if (eventItem) {
-            [waveView setCountDownTime:eventItem.remainingTime];
+            [_timePlateView setCountDownTime:eventItem.remainingTime];
+            [_timePlateView setEventContent:eventItem.content];
         }
         else {
-            [waveView setCountDownTime:0.f];
+            [_timePlateView setCountDownTime:0.f];
         }
     }
 }
@@ -58,27 +65,34 @@
     [imageView setFrame:self.bounds];
     [self setMaskView:imageView];
     
-    for (AnimatedWaveView *waveView in _waveViewsArray) {
-        if (waveView.countDownTime > 0.f) {
-            [waveView startAnimation];
-            [self addSubview:waveView];
-        }
-        else {
-            [waveView stopAnimation];
-            [waveView removeFromSuperview];
-        }
+    if (_timePlateView.countDownTime > 0.f) {
+        
+        [_waveView startAnimation];
+        [self addSubview:_waveView];
+
+        [_timePlateView startCounting];
+        [_gravityView setCenter:CGPointMake(self.width/2, self.height/2)];
+        [self addSubview:_gravityView];
+    }
+    else {
+        [_timePlateView startCounting];
+        [_gravityView removeFromSuperview];
+        [_waveView stopAnimation];
+        [_waveView removeFromSuperview];
     }
 }
 
 #pragma mark - AnimatedWaveDelegate
 
-- (void)animatedWaveView:(AnimatedWaveView *)waveView residualTime:(NSTimeInterval)time {
-    [waveView setY:[self waveViewOffsetWithResidualTime:time]];
+- (void)timePlateView:(TimePlateView *)plateView residualTime:(NSTimeInterval)time {
+    [_waveView setY:[self waveViewOffsetWithResidualTime:time]];
 }
 
-- (void)animatedWaveView:(AnimatedWaveView *)waveView finshedCountDown:(BOOL)finished {
-    [waveView stopAnimation];
-    [waveView removeFromSuperview];
+- (void)timePlateView:(TimePlateView *)plateView finshedCountDown:(BOOL)finished {
+    [_waveView stopAnimation];
+    [_waveView removeFromSuperview];
+    [plateView stopCounting];
+    [plateView removeFromSuperview];
 }
 
 #pragma mark - util

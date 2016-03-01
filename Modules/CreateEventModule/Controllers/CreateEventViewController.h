@@ -8,6 +8,6 @@
 
 #import "BaseViewController.h"
 
-@interface CreateEventViewController : BaseViewController
+@interface CreateEventViewController : UITableViewController
 
 @end

@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  SimpleDo
+
+  Created by gukong on 15/7/13.
+  Copyright (c) 2015年 gukong. All rights reserved.
+*/
+
+"DO" = "DO";
+
+"title_create" = "创建";
+"title_done" = "完成";
+"title_im_em" = "重要紧急";
+"title_im_nem" = "重要不紧急";
+"title_nim_em" = "不重要紧急";
+"title_nim_nem" = "不重要不紧急";

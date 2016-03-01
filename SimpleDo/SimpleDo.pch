@@ -23,6 +23,7 @@
 #import "BaseMutableSectionDataManager.h"
 #import "BaseCollectionView.h"
 #import <KVOController/FBKVOController.h>
+#import "BaseEditCell.h"
 
 /**
  *  <#Description#>
@@ -39,10 +40,11 @@
 /**
  *  <#Description#>
  */
-#define MaxCountOfWaveViews 2
 
 #define NavigationBarHeight 64.f
 
+#define FontWithSize(size) [UIFont systemFontOfSize:size]
+#define Localized(key) NSLocalizedString(@key, nil)
 #endif
 
 /**
